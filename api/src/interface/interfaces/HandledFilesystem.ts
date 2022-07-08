@@ -1,14 +1,7 @@
 import * as pa from "pareto-lang-api"
 import * as asyncAPI from "pareto-async-api"
+import { DirNodeData } from "../types/DirNodeData"
 
-export type DirNodeData = {
-    name: string;
-    path: string;
-    type:
-    | ["directory", {}]
-    | ["file", {}]
-    | ["other", {}]
-};
 
 export type File = <T>(
     path: string[],
