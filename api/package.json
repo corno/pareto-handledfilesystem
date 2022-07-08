@@ -10,13 +10,13 @@
   "bugs": {
     "url": "https://github.com/corno/pareto/issues"
   },
-  "description": "async function for pareto",
+  "description": "",
   "homepage": "https://github.com/corno/pareto#readme",
   "license": "ISC",
-  "name": "pareto-async-api",
+  "name": "pareto-handledfilesystem-api",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/corno/pareto-async.git"
+    "url": "git+https://github.com/corno/pareto-handledfilesystem.git"
   },
   "types": "dist/index.d.ts",
   "version": "0.6.0",
