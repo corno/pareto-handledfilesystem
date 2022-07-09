@@ -21,8 +21,7 @@
   "types": "dist/index.d.ts",
   "version": "0.7.0",
   "dependencies": {
-    "pareto-async-api": "^0.8.0",
-    "pareto-lang-api": "^0.6.0"
+    "pareto-api-core": "^0.1.0"
   },
-  "content-fingerprint": "0ab60e83c1c9693e7f74ce11bf32d8630a1e9039"
+  "content-fingerprint": "f7bd5ef2a820754dfc0855cee2496045f0cc264a"
 }

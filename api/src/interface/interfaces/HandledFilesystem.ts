@@ -1,17 +1,16 @@
-import * as pa from "pareto-lang-api"
-import * as asyncAPI from "pareto-async-api"
+import * as pa from "pareto-api-core"
 import { DirNodeData } from "../types/DirNodeData"
 
 
 export type File = <T>(
     path: string[],
-    callback: (data: string) => asyncAPI.IAsync<T>,
-) => asyncAPI.IAsync<T>
+    callback: (data: string) => pa.IAsync<T>,
+) => pa.IAsync<T>
 
 export type Directory = <T>(
     path: string[],
-    callback: (data: DirNodeData) => null | asyncAPI.IAsync<T>,
-) => asyncAPI.IAsync<pa.IReadonlyDictionary<T>>
+    callback: (data: DirNodeData) => null | pa.IAsync<T>,
+) => pa.IAsync<pa.IReadonlyDictionary<T>>
 
 export type WriteFile = (
     path: string[],
@@ -25,15 +24,15 @@ export type Unlink = (
 export type WriteFileAndWait = (
     path: string[],
     data: string,
-) => asyncAPI.IAsync<null>
+) => pa.IAsync<null>
 
 export type IHandledFilesystem = {
     file: File
     optionalFile: <T>(
         path: string[],
-        callback: (data: string) => asyncAPI.IAsync<T>,
-        notExists: () => asyncAPI.IAsync<T>,
-    ) => asyncAPI.IAsync<T>
+        callback: (data: string) => pa.IAsync<T>,
+        notExists: () => pa.IAsync<T>,
+    ) => pa.IAsync<T>
     directory: Directory
     writeFile: WriteFile
     writeFileAndWait: WriteFileAndWait,
