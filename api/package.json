@@ -19,7 +19,7 @@
     "url": "git+https://github.com/corno/pareto-handledfilesystem.git"
   },
   "types": "dist/index.d.ts",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "dependencies": {
     "pareto-api-core": "^0.3.0"
   },
